@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Verification</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(248, 242, 242);
+        }
+
+        .total {
+            margin: 100px auto;
+            width: 800px;
+            text-align: center;
+            border: 1px solid #000000;
+            border-radius: 5px;
+        }
+
+        .total #title {
+            background-color: rgb(111, 111, 238);
+            color: aliceblue;
+            padding: 10px 0;
+        }
+
+        .total .item {
+            text-align: left;
+            margin: 10px 0 20px 30px;
+            font-weight: lighter;
+        }
+
+        .total .item label {
+            display: inline-block;
+            width: 105px;
+        }
+
+        .total .item input {
+            width: 300px;
+            height: 25px;
+            border-radius: 3px;
+            border: 1px solid grey;
+        }
+
+        .total .protocal {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .total .protocal button {
+            width: 100px;
+            background-color: rgb(111, 111, 238);
+            border: none;
+            border-radius: 3px;
+            color: #ffffff;
+            padding: 5px 0;
+            margin-left: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="total">
+        <div id="title">-- Account Information --</div>
+        <!-- account name -->
+        <div class="item">
+            <span class="important">*</span>
+            <label for="userAccount">UserName:</label>
+            <input type="text" id="userAccount" placeholder="Can't change if it's successfully set">
+        </div>
+        <p class="item_"></p>
+        <br>
+        <hr>
+        <!-- password -->
+        <div class="item">
+            <span class="important">*</span>
+            <label for="userPass">PassWord:</label>
+            <input type="password" id="userPass" placeholder="Please using 6-20 letters, number or symbol">
+        </div>
+        <p class="item_"></p>
+        <br>
+        <hr>
+        <!-- comfirm pwd -->
+        <div class="item">
+            <span class="important">*</span>
+            <label for="userPass_">Comfirm Pwd:</label>
+            <input type="password" id="userPass_">
+        </div>
+        <p class="item_"></p>
+        <br>
+        <hr>
+        <!-- username -->
+        <div class="item">
+            <span class="important">*</span>
+            <label for="userName">Name:</label>
+            <input type="text" id="userName" placeholder="Please enter your name">
+        </div>
+        <p class="item_"></p>
+        <br>
+        <hr>
+        <!-- id -->
+        <div class="item">
+            <span class="important">*</span>
+            <label for="information">ID:</label>
+            <input type="text" id="information" placeholder="Please enter your ID">
+        </div>
+        <p class="item_"></p>
+        <br>
+        <hr>
+        <!-- email -->
+        <div class="item">
+            <span class="important">*</span>
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Please enter your email">
+        </div>
+        <p class="item_"></p>
+        <br>
+        <hr>
+        <!-- phone -->
+        <div class="item">
+            <span class="important">*</span>
+            <label for="telephone">Phone Number:</label>
+            <input type="tel" id="telephone" placeholder="Please enter your phone number">
+        </div>
+        <p class="item_"></p>
+        <br>
+        <hr>
+        <!-- phone -->
+        <div class="protocal">
+            <input type="checkbox" id="choose">
+            <label for="choose">I have read and agree the rules about the contract </label>
+            <button id="handup">Submit</button>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/javascript" src="js/form.js"></script>
